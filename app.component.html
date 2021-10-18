@@ -1,0 +1,12 @@
+<div style="background-color: blueviolet; height: 50px;"><h1 style="margin-left: 650px;">TO-DO LIST</h1></div>
+  <div style="background-color: blue; width:300px; border:solid 10px olivedrab; margin-left:580px;margin-top:300px;margin-bottom:300px;">
+  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{title}}</h3>
+
+<input type="text" placeholder="Enter New Task" #task  style="margin-left: 60px;"/><br> <br>
+
+<button class="bt" (click)="addTask(task.value)" style="margin-left: 100px; margin-bottom:50px;">SUBMIT</button>
+<br>
+<ul *ngFor="let item of list">
+  <div style="background-color: chartreuse;"><li>{{item.name}}<button class="bt" (click)="removeTask(item.id)" >Remove</button></li></div><br>
+ </ul></div>
+ <div style="background-color: blueviolet; height: 50px;"><h4 style="margin-left: 650px;">WRITE DOWN YOUR TIME TABLE</h4></div>
